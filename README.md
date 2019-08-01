@@ -5,8 +5,10 @@ script to have the dynamic libraries linked correctly when debugging a core file
 This is an example showing how to use the pkgcore script for any core file. It MUST be called in the machine in the machine where the core file was generated.
 
 Usage: ./pkgrhelcore_2015_Jun_03.sh <case# or OutputFilename> <Corefile> <PID of process | Path to Executable>
+
 Example:
 bash-4.1$ ./pkgrhelcore_2015_Jun_03.sh cleanbe_28283 core_cleanbe_28283.28283  `oscp -r`/bin/cleanbe
+
 Packaging RHEL 5/6 Coredump for remote debugging.
   pkgrhelcore.sh version 2015.06.03 11:00 PDT
 ----------------------------------------------
