@@ -1,12 +1,16 @@
 # pkgcore
+
 This script was build to be used specifically for VOD, once the database process crashes generating a core file. It is intended to collect the core file and the dynamic libraries linked correctly in two compressed tar files. These tar files can be used later when debugging a core file in a machine where the core wasn't originated.
 
 
 This is an example showing how to use the pkgcore script for any core file. It MUST be called in the machine in the machine where the core file was generated.
 
-Usage: ./pkgrhelcore_2015_Jun_03.sh <case# or OutputFilename> <Corefile> <PID of process | Path to Executable>
+Usage:
+
+    ./pkgrhelcore_2015_Jun_03.sh <case# or OutputFilename> <Corefile> <PID of process | Path to Executable>
 
 Example:
+
 bash-4.1$ ./pkgrhelcore_2015_Jun_03.sh cleanbe_28283 core_cleanbe_28283.28283  `oscp -r`/bin/cleanbe
 
 Packaging RHEL 5/6 Coredump for remote debugging.
